@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+
+\usepackage{a4wide}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    \pagestyle{empty}
+    \vspace*{-9em}
+
+    \title{Useful Inequalities}
+    \author{Carlos Luna-Mota}
+    \date{\today}
+    
+    \begin{center}
+        \section*{\Huge Useful Inequalities}
+    \end{center}
+
+    \vspace*{2em}
+
+        For any pair of sorted sequences of real numbers of equal length ($x_0 \leq x_1 \leq \dots \leq x_n$ and $y_0 \leq y_1 \leq \dots \leq y_n$) and for any arbitrary permutation $\sigma$ of their index set:\bigskip
+
+        \paragraph{Rearrangement Inequality:} $\displaystyle \boxed{\sum x_i y_{n-i} \;\leq\; \sum x_i y_{\sigma(i)} \;\leq\; \sum x_i y_i}$ \bigskip
+
+        with the equality holding if and only if the permutated $y_i$ are equal. \bigskip
+
+    \hrulefill \bigskip
+
+        For any pair of finite or infinite sequences of real numbers ($x_1, x_2, \dots$ and $y_1, y_2, \dots$) and for any set of non-negative weights $w_i\geq0$:
+
+        \paragraph{Weighted Cauchy-Schwarz Inequality:} $\displaystyle \boxed{\left( \sum w_i x_i y_i\right)^2 \;\leq\;\left(\sum w_i x^2_i\right) \left(\sum w_i y^2_i\right)}$ \bigskip
+
+        with equality if and only if $\vec x$ and $\vec y$ are linearly dependent.
+
+    \hrulefill \bigskip
+
+        For any set of nonnegative weights $w_i \geq 0$ such that $\sum w_i = 1$ and any set $x_1, \dots, x_n$ of nonnegative real numbers:
+
+        \paragraph{Weighted AM-GM Inequality:} $\displaystyle \boxed{{\min \{x_i\} \;\leq\;} \prod x_i^{w_i} \;\leq\; \sum w_i x_i {\;\leq\; \max \{x_i\}}}$ \bigskip
+
+        with the middle equality holding if and only if all $x_i$ such that $w_i > 0$ are equal. \bigskip
+
+    \hrulefill \bigskip
+
+        For any $m\times n$ matrix of nonnegative real numbers $x_{ij} \geq 0\quad \forall\;i\in\{1,\dots, m\};\; \forall\;j\in\{1, \dots, n\}$ and any set of $n$ nonnegative weights $w_j \geq 0$ such that $\sum w_j = 1$:
+        
+        \paragraph{Generalized H\"older Inequality:} $\displaystyle \boxed{\sum_{i=1}^{m}{\left(\prod_{j=1}^{n} {x_{ij}}^{w_j}\right)} \;\leq\; \prod_{j=1}^{n}\left(\sum_{i=1}^{m} x_{ij}\right)^{w_j}}$ \bigskip
+
+        with the equality holding if and only if two colums of the $x_{ij}$ matrix are linearly dependent. \bigskip
+
+    \hrulefill \bigskip
+
+        For any function $\phi(x)$ that is convex in a given interval, any set of points $x_1, x_2, \dots$ of that interval and any set of nonnegative weights $w_i \geq 0$ such that $\sum w_i = 1$:  
+
+        \paragraph{Weighted Jensen Inequality:} $\displaystyle \boxed{\phi\left(\sum w_i x_i\right) \;\leq\; \sum w_i \phi(x_i)}$ \bigskip
+
+        A continuous function $\phi(x)$ is convex in a given interval if and only if, for any $x_1, x_2$ in the interval, it satisfies $\phi\left(\tfrac{x_1+x_2}{2}\right) \leq \tfrac{\phi(x_1)+\phi(x_2)}{2}$. In the cases where $\phi''(x)$ exists, $\phi(x)$ is convex if $\phi''(x) \;\geq\;0$ in the interval.
+
+\end{document}
+
